@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Martinez</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <img src="img/logo.png" alt="Banco Martinez Logo" id="logo"
+            style="display: block; margin: 0 auto; width: 150px;">
+        <h1>Banco Martinez</h1>
+
+        <div id="Bienvenido">
+            <h1>Bienvenido, <span id="user-name"></span></h1>    
+
+    
+            <div id="saldo-container">
+                <div id="saldo-text">
+                    <p id="saldo-ars">Saldo en Pesos (ARS): $<span id="balance">0</span></p>
+                    <p id="saldo-usd">Saldo en Dólares (USD): $<span id="dollar-balance">0</span></p>
+                </div>
+                <img src="img/dinero.png" alt="Dinero">
+            </div>
+            
+            <div id="buttons-container">
+                <button id="request-loan">
+                    <img src="img/prestamo.jpg" alt="Préstamo" class="button-icon"> Solicitar Préstamo
+                </button>
+                <button id="request-card">
+                    <img src="img/tarjeta.png" alt="Tarjeta" class="button-icon"> Solicitar Tarjeta
+                </button>
+                <button id="buy-dollars">
+                    <img src="img/dolar.png" alt="Dólares" class="button-icon"> Comprar Dólares
+                </button>
+                <button id="logout">
+                    <img src="img/salir.png" alt="Cerrar Sesión" class="button-icon"> Cerrar Sesión
+                </button>
+            </div>
+    <div id="image">
+        <img src="img/12345.jpg" alt="Banco 1">
+        <img src="img/19197149.jpg" alt="Banco 2">
+        <img src="img/20943667.jpg" alt="Banco 3">
+    </div>
+</div>
+
+
+<script src="banco.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Martinez - Simulador de Banca</title>
+    <link rel="stylesheet" href="estilo/estiloindex.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div id="app">
+        <img src="img/logo.png" alt="Banco Martinez Logo" id="logo" style="display: block; margin: 0 auto; width: 150px;">
+        <h1>Banco Martinez</h1>
+        
+        <div id="register-section">
+            <h2>Crear Usuario</h2>
+            <form id="register-form">
+                <label for="new-username">Usuario:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">Clave:</label>
+                <input type="password" id="new-password" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        
+        <div id="login-section">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <label for="password">Clave:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Ingresar</button>
+                <img src="img/7990325.jpg" alt="banco">
+            </form>
+            <p id="error-message" style="color: red; display:none;">Usuario o contraseña incorrectos.</p>
+        </div>
+    </div>
+
+<script src="usuario.js"></script>
+
+</body>
+</html>
